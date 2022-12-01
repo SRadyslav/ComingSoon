@@ -1,3 +1,24 @@
+.flip-clock {
+    --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+    --fcc-digit-block-width: 30px; /* width of digit card */
+    --fcc-digit-block-height: 60px; /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 30px; /* font size of digit */
+    --fcc-digit-color: black; /* color of digit */
+    --fcc-label-font-size: 10px; /* font size of label */
+    --fcc-label-color: white; /* color of label */
+    --fcc-background: white; /* background of digit card */
+    --fcc-divider-color: black; /* color of divider */
+    --fcc-divider-height: 1px; /* height of divider */
+    --fcc-separator-size: 6px; /* size of colon */
+    --fcc-separator-color: white; /* color of colon */
+}
+
+.flip-clock {
+    font-family: 'Orbitron';
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +62,46 @@ body {
 .page h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-
 }
+
+.page h3 {
+    font-weight: 300;
+    min-width: 400px;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    width: 180px;
+    height: 64px;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: .4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 900px) {
+    .page h1 {
+        font-size: 4rem;
+    }
+    .page h3 {
+        min-width: 600px;
+    }
+    .flip-clock {
+        --fcc-digit-block-width: 80px; /* width of digit card */
+        --fcc-digit-block-height: 120px; /* height of digit card, highly recommend in even number */
+        --fcc-digit-font-size: 60px; /* font size of digit */
+        --fcc-digit-color: black; /* color of digit */
+        --fcc-label-font-size: 20px;
+    }
+}
+
 
